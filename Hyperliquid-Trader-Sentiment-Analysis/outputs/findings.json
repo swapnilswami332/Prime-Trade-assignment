@@ -1,0 +1,203 @@
+{
+  "dataset": {
+    "trade_rows": 211224,
+    "unique_traders": 32,
+    "unique_coins": 246,
+    "trade_date_range": [
+      "2023-05-01",
+      "2025-05-01"
+    ],
+    "trades_missing_sentiment": 6,
+    "trades_with_sentiment_match": 211218,
+    "note_no_leverage_column": true
+  },
+  "sentiment_performance": [
+    {
+      "Classification": "Extreme Fear",
+      "trades": 21400,
+      "total_pnl": 739110.24849,
+      "avg_pnl": 34.53786207897196,
+      "win_rate": 0.370607476635514,
+      "avg_size_usd": 5349.7318429906545,
+      "total_volume_usd": 114484261.44
+    },
+    {
+      "Classification": "Fear",
+      "trades": 61837,
+      "total_pnl": 3357155.441642,
+      "avg_pnl": 54.29039962549929,
+      "win_rate": 0.42076750165758364,
+      "avg_size_usd": 7816.109930785775,
+      "total_volume_usd": 483324789.79
+    },
+    {
+      "Classification": "Neutral",
+      "trades": 37686,
+      "total_pnl": 1292920.67555,
+      "avg_pnl": 34.307718398078855,
+      "win_rate": 0.3969909250119408,
+      "avg_size_usd": 4782.732661465796,
+      "total_volume_usd": 180242063.08
+    },
+    {
+      "Classification": "Greed",
+      "trades": 50303,
+      "total_pnl": 2150129.272951,
+      "avg_pnl": 42.74355948851957,
+      "win_rate": 0.38482794266743536,
+      "avg_size_usd": 5736.884375086972,
+      "total_volume_usd": 288582494.72
+    },
+    {
+      "Classification": "Extreme Greed",
+      "trades": 39992,
+      "total_pnl": 2715171.310673,
+      "avg_pnl": 67.89286133909282,
+      "win_rate": 0.46494298859771954,
+      "avg_size_usd": 3112.2515645629123,
+      "total_volume_usd": 124465164.57
+    }
+  ],
+  "size_usd_bucket_analysis": [
+    {
+      "bucket": "<500",
+      "trades": 90695,
+      "avg_pnl": 3.993339235106676,
+      "win_rate": 0.41539224874579633
+    },
+    {
+      "bucket": "500-2k",
+      "trades": 64654,
+      "avg_pnl": 17.177065792851177,
+      "win_rate": 0.40596096142543386
+    },
+    {
+      "bucket": "2k-10k",
+      "trades": 37169,
+      "avg_pnl": 75.26353775334285,
+      "win_rate": 0.4240899674459899
+    },
+    {
+      "bucket": "10k-50k",
+      "trades": 14485,
+      "avg_pnl": 257.27968530148434,
+      "win_rate": 0.3692095270969969
+    },
+    {
+      "bucket": "50k+",
+      "trades": 4221,
+      "avg_pnl": 544.9065040016584,
+      "win_rate": 0.4352049277422412
+    }
+  ],
+  "mann_whitney_fear_vs_greed_pnl": {
+    "statistic": 1643204000.5,
+    "p_value": 1.3045873858600704e-68
+  },
+  "correlation_sentiment_score_vs_pnl": 0.005969909479052154,
+  "correlation_sentiment_score_vs_size_usd": -0.03191164627638345,
+  "top5_traders": [
+    {
+      "account": "0xb1231a4a2dd02f2276fa3c5e2a2f3436e6bfed23",
+      "total_pnl": 2143382.597689,
+      "avg_pnl": 145.48174829898866,
+      "trades": 14733,
+      "wins": 4967,
+      "win_rate": 0.3371343243059798,
+      "pnl_std": 1374.0264020518673,
+      "avg_size_usd": 3837.8853750084845
+    },
+    {
+      "account": "0x083384f897ee0f19899168e3b1bec365f52a9012",
+      "total_pnl": 1600229.819979,
+      "avg_pnl": 419.1277684596647,
+      "trades": 3818,
+      "wins": 1373,
+      "win_rate": 0.3596123624934521,
+      "pnl_std": 4692.452328769463,
+      "avg_size_usd": 16159.576733892092
+    },
+    {
+      "account": "0xbaaaf6571ab7d571043ff1e313a9609a10637864",
+      "total_pnl": 940163.8062200001,
+      "avg_pnl": 44.364090516232544,
+      "trades": 21192,
+      "wins": 9909,
+      "win_rate": 0.46758210645526616,
+      "pnl_std": 567.7627628499158,
+      "avg_size_usd": 3210.4728312570787
+    },
+    {
+      "account": "0x513b8629fe877bb581bf244e326a047b249c4ff1",
+      "total_pnl": 840422.555216,
+      "avg_pnl": 68.68441935403726,
+      "trades": 12236,
+      "wins": 4909,
+      "win_rate": 0.40119320039228507,
+      "pnl_std": 639.4024436908081,
+      "avg_size_usd": 34396.58028440667
+    },
+    {
+      "account": "0xbee1707d6b44d4d52bfe19e41f8a828645437aab",
+      "total_pnl": 836080.553077,
+      "avg_pnl": 20.806304824731235,
+      "trades": 40184,
+      "wins": 17208,
+      "win_rate": 0.428230141349791,
+      "pnl_std": 264.12388031602194,
+      "avg_size_usd": 1844.2118863229146
+    }
+  ],
+  "bottom5_traders_min30trades": [
+    {
+      "account": "0x8170715b3b381dffb7062c0298972d4727a0a63b",
+      "total_pnl": -167621.12478099996,
+      "avg_pnl": -36.431455070854156,
+      "trades": 4601,
+      "wins": 1761,
+      "win_rate": 0.38274288198217776,
+      "pnl_std": 1647.778984205598,
+      "avg_size_usd": 2204.685531406216
+    },
+    {
+      "account": "0x271b280974205ca63b716753467d5a371de622ab",
+      "total_pnl": -70436.191318,
+      "avg_pnl": -18.49204287687057,
+      "trades": 3809,
+      "wins": 1150,
+      "win_rate": 0.3019165135206091,
+      "pnl_std": 542.182659294162,
+      "avg_size_usd": 8893.000897873459
+    },
+    {
+      "account": "0x3998f134d6aaa2b6a5f723806d00fd2bbbbce891",
+      "total_pnl": -31203.599986000005,
+      "avg_pnl": -38.28662574969326,
+      "trades": 815,
+      "wins": 371,
+      "win_rate": 0.45521472392638035,
+      "pnl_std": 558.7787526232371,
+      "avg_size_usd": 1729.9411042944785
+    },
+    {
+      "account": "0x39cef799f8b69da1995852eea189df24eb5cae3c",
+      "total_pnl": 14456.919335999999,
+      "avg_pnl": 4.02811906826414,
+      "trades": 3589,
+      "wins": 1176,
+      "win_rate": 0.32766787405962666,
+      "pnl_std": 730.49548364437,
+      "avg_size_usd": 4790.575486207857
+    },
+    {
+      "account": "0x7f4f299f74eec87806a830e3caa9afa5f2b9db8f",
+      "total_pnl": 14900.443047,
+      "avg_pnl": 9.557692781911483,
+      "trades": 1559,
+      "wins": 705,
+      "win_rate": 0.45221295702373315,
+      "pnl_std": 72.56119523718134,
+      "avg_size_usd": 3748.8675112251444
+    }
+  ]
+}
